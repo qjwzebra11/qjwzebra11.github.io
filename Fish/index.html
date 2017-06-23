@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Menu </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+var menu_text = new sjs.Text("MENU",28,"blue");
+
+
+menu_text.centerH();
+
+var startBtn = new sjs.Button("Start", function(){
+window.location = "fish.html";
+});
+startBtn.center();
+
+var info_text = new sjs.Text("Created By Quintin West",20,"blue");
+
+info_text.bottom().centerH();
+
+var meeeee_text = new sjs.Text("Fish have figured out that they are powerful in space now they have captured every one except you and your home planet!",20,"black");
+
+var meeee_text = new sjs.Text("Eat fish that are smaller than you Or eat crumbs that fall out of the sky so you can eat anything for 30 seconds",20,"red");
+
+meeeee_text.center().offset(0, 50);
+meeee_text.center().offset(200, 90);
+
+}
+</script>
+</head>
+<body onload="start()">
+<h1> Fish </h1>
+
+<div id="target" style="margin:auto;background:grey;"></div>
+</body>
+</html>
